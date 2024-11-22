@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>hoofd pagina </title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+    <a href="#" class="logo"> ibo</a>
+ 
+    <nav>
+        <a href="#" class="active">home</a>
+        <a href="project.html">project</a>
+        <a href="overmij.html">over mij</a>
+        <a href="contacten.html">contact</a>
+        <a href="interview.html">interview</a>
+        
+
+    </nav>
+    </header>
+    <section class="home">
+        <div class="home-img">
+            <img class="fotohome" src="A520A78F-4125-4FAE-8A58-1331135DE9A4_1_105_c.jpeg" alt="" width="400">
+        </div>
+        <div class="home-content">
+            <h1>Hallo, ik ben <span> ibrahim</span> </h1>
+            <h3 class="typing-text" id="mijnTekst"> ik ben een software developer <span></span></h3>
+           
+            <div class="social-icons">
+               
+            </div>
+            <a href="#" class="btn"> bekijk</a>
+        </div>
+ 
+    </section>
+    <script>
+        
+         // Functie die de tekstkleur elke paar seconden verandert
+         let isBlauw = true; // Deze variabele houdt bij of de kleur blauw of rood moet zijn
+
+function veranderKleur() {
+    var tekst = document.getElementById("mijnTekst");
+    
+    if (isBlauw) {
+        tekst.style.color = "blue";  // Zet de kleur naar blauw
+    } else {
+        tekst.style.color = "red";   // Zet de kleur naar rood
+    }
+    
+    // Wissel de kleurstatus
+    isBlauw = !isBlauw;
+}
+
+// Gebruik setInterval om de kleur elke 500 milliseconden te veranderen
+setInterval(veranderKleur, 500);
+        
+        window.onload = function() {
+            alert("Welkom op mijn website!");
+        };
+    </script>
+
+    
+</body>
+</html>
