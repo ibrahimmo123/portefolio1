@@ -35,35 +35,37 @@
                
             </div>
             <a href="#" class="btn"> bekijk</a>
+
+            <script src="java.js">
+        
+         
+            </script>
         </div>
+        <!--<button id="dark-mode-toggle">🌙</button>-->
+<div id="cookie-message" class="cookie-message">
+    <div class="button accept">
+        <button onclick="cookiemelding()"> accept </button>
+ 
+    </div>
+    <div class="button decline">
+        <button onclick="cookiemelding()">
+            decline
+        </button>
+    </div>
+</div>
+ 
+<div class="lightMode">
+    <button onclick="lightmode()">
+        Light / Dark mode
+    </button>
+</div>
  
     </section>
-    <script>
+    <script src="java.js">
         
-         // Functie die de tekstkleur elke paar seconden verandert
-         let isBlauw = true; // Deze variabele houdt bij of de kleur blauw of rood moet zijn
-
-function veranderKleur() {
-    var tekst = document.getElementById("mijnTekst");
-    
-    if (isBlauw) {
-        tekst.style.color = "blue";  // Zet de kleur naar blauw
-    } else {
-        tekst.style.color = "red";   // Zet de kleur naar rood
-    }
-    
-    // Wissel de kleurstatus
-    isBlauw = !isBlauw;
-}
-
-// Gebruik setInterval om de kleur elke 500 milliseconden te veranderen
-setInterval(veranderKleur, 500);
-        
-        window.onload = function() {
-            alert("Welkom op mijn website!");
-        };
+         
     </script>
-
+    
     
 </body>
 </html>

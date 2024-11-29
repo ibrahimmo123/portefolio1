@@ -433,4 +433,58 @@ body {
  tr:nth-child(even) {
    background-color: #e64a4a;
  }
- 
+
+
+ .cookie-message {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  flex-direction: row;
+}
+
+.cookie-message button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.cookie-message button:hover {
+  background-color: #45a049;
+}
+
+ .home {
+  padding: 25px;
+  background-color: black;
+  color: white;
+  font-size: 25px;
+}
+.lightmode{
+  background-color: white;
+  color: black;
+}
+.lightmode button{
+  position: fixed;  
+  top: 20px;        
+  right: 20px;      
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;    
+  border: none;      
+  border-radius: 5px;
+  cursor: pointer;  
+  font-size: 16px;
+}
+
+.dark-mode {
+  background-color: white;
+  color: black;
+}
+
+
